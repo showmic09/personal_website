@@ -1,0 +1,402 @@
+*{
+    margin: 0px;
+    padding: 0ox;
+    /*box-sizing: border-box;*/
+}
+body{
+    background-color:#fefdfa;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: brown
+}
+.logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-family:'EB Garamond', serif;
+    text-shadow: 3px 3px rgb(41, 41, 41);  
+}
+.nav-links{
+    display: flex;
+    text-transform: initial;
+    justify-content: space-around;
+    width: 45%;
+}
+.nav-links li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a:hover{
+    color:#cccccc;
+    font-weight:bold;
+    font-size: 16px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 22px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    padding: 20px;
+    margin: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica,sans-serif;
+    font-size: 20px;
+}
+.pp{
+    align-items: center;
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    background-size: contain;
+}
+.contact_box{
+    background-color:#f5f4f4;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contact_info{
+    padding: 1rem;
+    width: 350px;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 500px;
+    height: 500px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+#research_pic{
+    position: relative;
+    width: 80%;
+    padding: 20px;
+}
+
+#research_pic:hover .image {
+    opacity: 0.3;
+    cursor: pointer;
+}
+  
+#research_pic:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+.research_topics{
+    text-align: center;
+    font-family: Arial, Helvetica,sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+#publication_pic{
+    min-height: 400px;
+    background-image:url('../img/publication.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    text-align:center;
+    color:black;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom:0;
+    cursor: pointer;
+}
+
+#photography_link{
+    min-height: 400px;
+    background-image:url('../img/photography_link.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    text-align:center;
+    color:#ffffff;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom:0;
+    cursor: pointer;
+}
+
+
+#publication_pic:hover{
+    opacity:0.7;
+}
+
+#photography_link:hover{
+    opacity:0.7;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:760px){
+    body{
+        overflow: scroll;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 77.5%;
+        top: 8vh;
+        background-color: brown;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .headshot {
+        max-width: 50%;
+        height: auto;
+        left: 0em;
+        padding: 10px;
+    }
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+/*social media links */
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 20%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    color: white;
+    background: #3B5998;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-youtube-play {
+    color: white;
+    background: #bb0000;
+  }
+
+/*social media links */
+#scholar{
+    position: relative;
+    top: 23px;
+}
+#scholar:hover{
+    opacity: 0.7;
+}
+#icon_google_scholar{
+    padding:20px;
+    margin: 5px 2px;
+    border-radius: 20%;
+    color: white;
+    font-size: 20px;
+    background-color: #55ACEE;
+}
+#icon_google_scholar:hover{
+    opacity: 0.7;
+}
+#icon_academia{
+    padding:20px;
+    margin: 5px 2px;
+    border-radius: 20%;
+    color:black;
+    font-size: 20px;
+    background-color: rgb(223, 221, 221);
+}
+#icon_academia:hover{
+    opacity: 0.7;
+}
+#icon_researchgate{
+    padding:20px;
+    margin: 5px 2px;
+    border-radius: 20%;
+    color:white;
+    font-size: 20px;
+    background-color: rgb(8, 189, 180);
+}
+#icon_researchgate:hover{
+    opacity: 0.7;
+}
+
+.ia:hover{
+    opacity: 0.7;
+}
+
+/*photography links */
+
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+
+footer{
+    bottom: 0;
+    padding:1rem;
+    width:100%;
+    margin-top:2rem;
+    color:#ffffff;
+    background-color:rgb(136, 35, 35);
+    text-align: center;
+  }
