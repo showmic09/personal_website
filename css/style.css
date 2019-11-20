@@ -33,6 +33,7 @@ nav{
     margin: 0;
     padding: 10px;
 }
+
 .nav-links a:hover{
     color:#cccccc;
     font-weight:bold;
@@ -45,6 +46,10 @@ nav{
     font-weight: bold;
     font-size: 14px;
 }
+a {
+    font-weight: bold;
+    text-decoration: none;
+  }
 .burger{
     display: none;
 }
