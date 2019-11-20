@@ -138,10 +138,13 @@ nav{
     .nav-links{
         width: 60%;
     }
+    body{
+        overflow-x: scroll;
+    }
 
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:760px){
     body{
         overflow-y: scroll;
         overflow-x: hidden;
@@ -196,7 +199,9 @@ nav{
     .fa {
         margin: 0px 2px 2px;
     }
-
+    .mobile_view{
+        overflow-x: hidden;
+    }
     
 }
 
@@ -220,7 +225,7 @@ nav{
 .fa {
     padding: 20px;
     font-size: 20px;
-    width: 20px;
+    width: 28px;
     text-align: center;
     text-decoration: none;
     margin: 5px 10px;
@@ -253,10 +258,11 @@ nav{
   }
 
 /*social media links */
-#scholar{
-    position: relative;
+#scholar{   
+   position: relative;
    top: 20px;
-   left: 10px;
+   left: 2px;
+   right: 20px;
 }
 #scholar:hover{
     opacity: 0.7;
@@ -268,6 +274,7 @@ nav{
     color: white;
     font-size: 20px;
     background-color: #55ACEE;
+    width: 30px;
 }
 #icon_google_scholar:hover{
     opacity: 0.7;
@@ -279,6 +286,7 @@ nav{
     color:black;
     font-size: 20px;
     background-color: rgb(223, 221, 221);
+    width: 28px;
 }
 #icon_academia:hover{
     opacity: 0.7;
