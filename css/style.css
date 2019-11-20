@@ -1,10 +1,10 @@
 *{
     margin: 0px;
     padding: 0ox;
-    /*box-sizing: border-box;*/
 }
 body{
     background-color:#fefdfa;
+    overflow-x: hidden;
 }
 nav{
     display: flex;
@@ -31,7 +31,7 @@ nav{
 .nav-links li {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 .nav-links a:hover{
     color:#cccccc;
@@ -75,6 +75,7 @@ nav{
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     background-size: contain;
+    width: 100%;
 }
 .contact_box{
     background-color:#f5f4f4;
@@ -87,10 +88,8 @@ nav{
     width: 350px;
 }
 .image {
-    opacity: 1;
     display: block;
-    width: 500px;
-    height: 500px;
+    width: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
 }
@@ -134,57 +133,27 @@ nav{
     padding: 20px;
     margin: 20px;
 }
-#publication_pic{
-    min-height: 400px;
-    background-image:url('../img/publication.jpg');
-    background-size:100%;
-    background-repeat: no-repeat;
-    text-align:center;
-    color:black;
-    position: relative;
-    padding-top: 20%;
-    padding-bottom:0;
-    cursor: pointer;
-}
 
-#photography_link{
-    min-height: 400px;
-    background-image:url('../img/photography_link.jpg');
-    background-size:100%;
-    background-repeat: no-repeat;
-    text-align:center;
-    color:#ffffff;
-    position: relative;
-    padding-top: 20%;
-    padding-bottom:0;
-    cursor: pointer;
-}
-
-
-#publication_pic:hover{
-    opacity:0.7;
-}
-
-#photography_link:hover{
-    opacity:0.7;
-}
-
-@media screen and (max-width:1024px){
+@media screen and (max-width:1500px){
     .nav-links{
         width: 60%;
+    }
+    body{
+        overflow-x: scroll;
     }
 
 }
 
 @media screen and (max-width:760px){
     body{
-        overflow: scroll;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 77.5%;
-        top: 8vh;
+        height: 90%;
+        top: 10vh;
         background-color: brown;
         display: flex;
         flex-direction: column;
@@ -206,7 +175,32 @@ nav{
         left: 0em;
         padding: 10px;
     }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        grid-row-gap: 100px;
+    }
+    .wrapper>.contact_info {
+        grid-column: 1; /* NEW */
+        grid-row: 1;
+        width: 100%;
+    }
 
+    .items{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        grid-row-gap: 50px;
+    }
+    .image{
+        width: 100%;
+    }
+    .fa {
+        margin: 0px 2px 2px;
+    }
+
+    
 }
 
 .nav-active{
@@ -216,7 +210,7 @@ nav{
 @keyframes navLinkFade {
     from{
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(0px);
     }
     to{
         opacity: 1;
@@ -232,7 +226,7 @@ nav{
     width: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 10px;
     border-radius: 20%;
   }
   
@@ -243,6 +237,10 @@ nav{
   .fa-facebook {
     color: white;
     background: #3B5998;
+  }
+  .fa-github {
+    background: rgb(223, 221, 221);
+    color: black;
   }
   .fa-twitter {
     background: #55ACEE;
@@ -260,14 +258,15 @@ nav{
 /*social media links */
 #scholar{
     position: relative;
-    top: 23px;
+   top: 20px;
+   left: 10px;
 }
 #scholar:hover{
     opacity: 0.7;
 }
 #icon_google_scholar{
     padding:20px;
-    margin: 5px 2px;
+    margin: 0px 10px 5px;
     border-radius: 20%;
     color: white;
     font-size: 20px;
@@ -278,7 +277,7 @@ nav{
 }
 #icon_academia{
     padding:20px;
-    margin: 5px 2px;
+    margin: 5px 10px;
     border-radius: 20%;
     color:black;
     font-size: 20px;
@@ -289,7 +288,7 @@ nav{
 }
 #icon_researchgate{
     padding:20px;
-    margin: 5px 2px;
+    margin: 5px 10px;
     border-radius: 20%;
     color:white;
     font-size: 20px;
@@ -388,8 +387,6 @@ nav{
   .demo:hover {
     opacity: 1;
   }
-
-
 
 footer{
     bottom: 0;
