@@ -206,6 +206,7 @@ a {
     }
     .mobile_view{
         overflow-x: hidden;
+        position: relative;
     }
     
 }
