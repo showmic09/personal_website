@@ -157,7 +157,7 @@ a {
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 90%;
+        height: 95vh;
         top: 10vh;
         background-color: brown;
         display: flex;
@@ -202,6 +202,15 @@ a {
         width: 100%;
     }
     .fa {
+        margin: 0px 2px 2px;
+    }
+    #icon_google_scholar{
+        margin: 0px 2px 2px;
+    }
+    #icon_researchgate{
+        margin: 0px 2px 2px;
+    }
+    #icon_academia{
         margin: 0px 2px 2px;
     }
     .mobile_view{
