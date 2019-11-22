@@ -2,9 +2,19 @@
     margin: 0px;
     padding: 0ox;
 }
+
 body{
     background-color:#fefdfa;
     overflow-x: hidden;
+    margin: 0;
+    padding-bottom: 0rem;
+}
+.mobile_view{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 2.5rem;
+    padding: 40px;
+    margin-top: 30px;
 }
 nav{
     display: flex;
@@ -12,7 +22,12 @@ nav{
     align-items:center;
     min-height: 8vh;
     font-family: 'Poppins', sans-serif;
-    background-color: brown
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 .logo{
     color: white;
@@ -20,8 +35,9 @@ nav{
     letter-spacing: 5px;
     font-size: 30px;
     font-family:'EB Garamond', serif;
-    text-shadow: 3px 3px rgb(41, 41, 41);  
+    text-shadow: 3px 3px rgb(41, 41, 41);
 }
+
 .nav-links{
     display: flex;
     text-transform: initial;
@@ -46,10 +62,12 @@ nav{
     font-weight: bold;
     font-size: 14px;
 }
-a {
+
+a{
     font-weight: bold;
     text-decoration: none;
-  }
+   
+}
 .burger{
     display: none;
 }
@@ -88,6 +106,13 @@ a {
     padding: 1rem;
 }
 
+.publication_topics{
+    text-align: left;
+    font-family: Arial, Helvetica,sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+}
 .contact_info{
     padding: 1rem;
     width: 350px;
@@ -117,7 +142,6 @@ a {
 
 #research_pic:hover .image {
     opacity: 0.3;
-    cursor: pointer;
 }
   
 #research_pic:hover .middle {
@@ -157,7 +181,7 @@ a {
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 95vh;
+        height: 85vh;
         top: 10vh;
         background-color: brown;
         display: flex;
@@ -409,10 +433,12 @@ a {
   }
 
 footer{
+    position: absolute;
     bottom: 0;
-    padding:1rem;
+    margin-top: 1rem;
+    padding: 1rem;
     width:100%;
-    margin-top:2rem;
+    left: 0;
     color:#ffffff;
     background-color:rgb(136, 35, 35);
     text-align: center;
