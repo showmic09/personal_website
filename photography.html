@@ -28,7 +28,7 @@
           <line x1="108" y1="60" x2="70" y2="60" style="stroke:rgb(24, 204, 195);stroke-width:5" />
           <line x1="56" y1="40" x2="56" y2="6" style="stroke:rgb(24, 204, 195);stroke-width:5" />
           <text x="50%" y="50%" font-size="35px" text-anchor="middle" stroke="white" stroke-width="2px" dy=".35em">
-              <tspan x="80" y="32">SI</tspan>
+            <tspan x="80" y="32">SI</tspan>
           </text>
           Sorry, your browser does not support inline SVG.
         </svg>
@@ -45,71 +45,25 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <h1 style="text-align:center">Some of my photos of landscape and wildlife</h1>
-
-    <div class="container">
-      <div class="mySlides">
-        <div class="numbertext">1 / 6</div>
-        <img src="./img/Elk.jpg" width="60%" height="auto">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">2 / 6</div>
-        <img src="./img/Deer.jpg" style="width:60%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">3 / 6</div>
-        <img src="./img/Deer_2.jpg" style="width:60%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">4 / 6</div>
-        <img src="./img/madison_capitol.jpg" style="width:60%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">5 / 6</div>
-        <img src="./img/pikes_peak_canal.jpg" style="width:60%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">6 / 6</div>
-        <img src="./img/royal_gorge_highest_bridge.jpg" style="width:60%">
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-
-      <div class="row">
-        <div class="column">
-          <img class="demo cursor" src="./img/Elk.jpg" style="width:60%" onclick="currentSlide(1)"
-            alt="ELK: I took this photo at Rocky Mountain National Park">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="./img/Deer.jpg" style="width:60%" onclick="currentSlide(2)"
-            alt="Photo taken in Garden of the Gods">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="./img/Deer_2.jpg" style="width:60%" onclick="currentSlide(3)"
-            alt="Photo taken in Garden of the Gods">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="./img/madison_capitol.jpg" style="width:60%" onclick="currentSlide(4)"
-            alt="Capitol of Madison. Photo was taken during OSG User School 2019">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="./img/pikes_peak_canal.jpg" style="width:60%" onclick="currentSlide(5)"
-            alt="Canal at Pikes Peak">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="./img/royal_gorge_highest_bridge.jpg" style="width:60%"
-            onclick="currentSlide(6)" alt="Royal Gorge">
-        </div>
+    <div class="wrapper_other">
+      <div class="heading_photography">
+        <h3>I enjoy traveling and taking photos of landscape and wildlife. Below are some of the photos of this amateur photographer. </h3>
+      <img class="myImg" src="/img/Elk.jpg" alt="Elk at Rocky mountain" style="width:100%;width:300px;height:300px" onclick="myFunction(this);">
+      <img class="myImg" src="/img/Deer.jpg" alt="Deer at garden of the gods" style="width:100%;width:300px;height:300px" onclick="myFunction(this);">
+      <img class="myImg" src="/img/Deer_2.jpg" alt="Deer at garden of the gods" style="width:100%;width:300px;height: 300px;" onclick="myFunction(this);">
+      <img class="myImg" src="/img/madison_capitol.jpg" alt="One of the most beautiful capitol building-Madison,Wisconsin" style="width:100%;width:300px;height:300px" onclick="myFunction(this);">
+      <img class="myImg" src="/img/madison_night.jpg" alt="The capitol building at Madison,Wisconsin" style="width:100%;width:300px;height:300px" onclick="myFunction(this);"> 
+      <img class="myImg" src="/img/madison_orchestra.jpg" alt="Live orchestra infront of the capitol building of Wisconsin" style="width:100%;width:300px;height:300px" onclick="myFunction(this);">
+      <img class="myImg" src="/img/Maroon_bell.jpg" alt="Maroon Bell-The perfect time to visit this place would be during fall and at the golden hour" style="width:100%;width:300px;height:300px" onclick="myFunction(this);">
+      <img class="myImg" src="/img/pikes_peak_canal.jpg" alt="Canal to the way of pikes peak" style="width:100%;width:300px;height:300px" onclick="myFunction(this);">
+      <img class="myImg" src="/img/photography_link.jpg" alt="Photo taken at Aspen. Such a colorful and lively city" style="width:100%;width:300px;height:300px" onclick="myFunction(this);">
+      <img class="myImg" src="/img/royal_gorge_highest_bridge.jpg" alt="Highest bridge in USA. Photo taken during the Royal Gorge train ride" style="width:100%;width:300px;height:300px" onclick="myFunction(this);">
+    </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
       </div>
 
     </div>

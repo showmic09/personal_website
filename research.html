@@ -27,7 +27,7 @@
           <line x1="108" y1="60" x2="70" y2="60" style="stroke:rgb(24, 204, 195);stroke-width:5" />
           <line x1="56" y1="40" x2="56" y2="6" style="stroke:rgb(24, 204, 195);stroke-width:5" />
           <text x="50%" y="50%" font-size="35px" text-anchor="middle" stroke="white" stroke-width="2px" dy=".35em">
-              <tspan x="80" y="32">SI</tspan>
+            <tspan x="80" y="32">SI</tspan>
           </text>
           Sorry, your browser does not support inline SVG.
         </svg>
@@ -44,30 +44,70 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <div class="research_topics">
-      <h1><a id="#ultrasonic_jump">Ultrasonic Scattering and Attenuation</a></h1>
-      <p>
-        Ultrasonic scattering and attenuation is being used to detect microstructural properties of the material.
-        Ultrasound wave scatters when it passes through the grains of polycrystalline materials. Grain boundaries are
-        the main sources of ultrasonic scattering and attenuation.
-        Ultrasonics theories like <a href="https://doi.org/10.1016/0022-5096(90)90021-U" target="blank">Weaver's</a>
-        model is specially helpful to understand ultrasonic responses in polycrystalline materials.
-      </p>
-      <br>
-      <h1><a id="#synthetic_jump">Synthetic Microstructures</a> </h1>
-      <p>
-        <a href="http://dream3d.bluequartz.net/">DREAM.3D</a> and
-        <a href="http://www.neper.info/">Neper</a> are two of the most prominent
-        softwares for creation of two and three dimensional
-        synthetic microstructures. Microstructures having different crystal symmetries with realistic euler angles and
-        texture can be generated using these softwares.
-        I use the theoretical models to numercially calculate the ultrasonic responses on these synthetic
-        microstructures. The ultimate goal
-        of the research is to be able to predict the microstructural properties based on the experimental ultrasonic
-        measurements.
+    <div class="wrapper_other">
+      <div class="research_topics">
+        <div class="ultrasonic_background">
+          <div class="description">
+            <h1><a id="#ultrasonic_jump">Ultrasonic Scattering and Attenuation</a></h1>
+            <p>
+              Ultrasound is a sound wave having a frequency of beyond 20000 Hz. Just like normal speech sounds echo is
+              also noticed in case of ultrasound. Using the echo of the ultrasound
+              different information about the body under investigation (materials, ceramics, biomaterials etc) can be
+              obtained. It is one of the most popular non-destrctive methods.
+              Ultrasound is used widely in various industries for detection and identification of defects in
+              polycrystalline materials.<span id="dots">...</span><span id="more">
+                But my research interest lies in qualifying polycrystalline materials through ultrasound. Using an
+                ultrasonic transducer ultrsonic signal can be transmitted and received.
+                When ultrasound travels inside a polycrystalline material it scatters in all direction.
+                From the reflected signal of the wave the information about the microstructure of the material can be
+                quantified. Two of the main properties of
+                ultrasound is its phase velocity and attenuation. Using these properties of ultrasound the
+                microstructural properties of a material can be predicted.
+                Ultrasonic wave scatters when it passes through the grains of polycrystalline materials. Grain
+                boundaries
+                are the main sources of ultrasonic scattering and attenuation.
+                Ultrasonics theories like <a href="https://doi.org/10.1016/0022-5096(90)90021-U"
+                  target="blank">Weaver's</a>
+                model is specially helpful for understanding ultrasonic responses in polycrystalline materials.
+                <a href="https://asa.scitation.org/doi/full/10.1121/1.5096651" target="blank">Noruzian and Turner</a>
+                developed the modifications
+                necessary to apply ultrasonic theories to calculate phase velocity
+                and attenuation using the discrete synthetic microstructures for cubic polycrystalline materials. The
+                goal
+                of my research is to further this approach of developing and testing the ultrasonic theories applicable
+                to discrete synthetic
+                microstructures for complex polycrystalline materials. The animation in this page is my lazy approach
+                towards describing the ultrasonic properties.
+                However, Iowa State University has built a great <a
+                  href="https://www.nde-ed.org/EducationResources/CommunityCollege/Ultrasonics/Physics/modepropagation.htm"
+                  target="blank">website</a> regarding all the NDT techinquies. I would highly encourage interested
+                readers to go through different sections in their website.</span>
+            </p>
+            <button onclick="readShow()" id="myBtn">Read more</button>
+            <br>
+          </div>
+          <div class="animation">
+            <img src="./files/ultrasound_background.gif" alt="research image" style="width: 100%;max-width:800px"
+              class="animation">
+          </div>
+        </div>
+        <h1><a id="#synthetic_jump">Synthetic Microstructures</a> </h1>
+        <p>
+          As I have mentioned before the ultimate goal of the research is to be able to predict the microstructural properties based on the experimental ultrasonic
+          measurements. Hopefully one day our group will be able to provide all microstructural information -(grain statistics, texture, defects, phases)
+          just by performing some ultrasonic measurements on the sample. But thats far away in future. There are many pieces of the puzzle that needs to be figured out before that.
+          To make prediction the relation between theoretical ultrasonic responses and experminetal responses need to be established. Most of my research works 
+          is computational based and requires the use of synthetic vloumes. <a href="http://dream3d.bluequartz.net/">DREAM.3D</a> and
+          <a href="http://www.neper.info/">Neper</a> are two of the most prominent softwares for creation of two and three dimensional
+          synthetic microstructures. Microstructures having different crystal symmetries with realistic euler angles
+          and texture can be generated using these softwares. I use the theoretical ultrasonic scattering models to numercially calculate 
+          the ultrasonic responses on these synthetic microstructures. Below you will find some of the codes used 
+          for creating synthetic microstructures of different tessellations.  
+        </p>
+        
         <div class="items">
           <div id="research_pic">
-            <img src="./img/twin3.jpg" alt="research image" class="image">
+            <img src="./img/twin.jpg" alt="research image" class="image">
             <div class="middle">
               <div class="text"><a href="./files/twin_ellipsoid.json" download>DREAM.3D Pipeline for twin
                   microstructures</a> </div>
@@ -76,38 +116,49 @@
           <div id="research_pic">
             <img src="./img/voxel_cube_100_gg.png" alt="research image" class="image">
             <div class="middle">
-              <div class="text"><a href="./files/Laguerre_voxel.sh" download>Neper code for Laguerre polycrystals</a></div>
+              <div class="text"><a href="./files/Laguerre_voxel.sh" download>Neper SLURM code for Laguerre
+                  polycrystals</a>
+              </div>
             </div>
           </div>
           <div id="research_pic">
             <img src="./img/gene_morp_2.png" alt="photography image" class="image">
             <div class="middle">
-              <div class="text">Voronoi polycrystals</div>
+              <div class="text"><a href="./files/voronoi_voxel.sh" download>Neper SLURM code for Voronoi
+                  polycrystals</a> </div>
             </div>
           </div>
         </div>
 
-      </p>
-      <br></br>
-      <h1>High Performance Computing</h1>
-      <p>
-        As part of the researcher's community at University of Nebraska-Lincoln I
-        have acess to <a href="https://hcc.unl.edu/">Holland Computing Center (HCC)</a>. HCC is a High Performace
-        Computing center which is based on <a href="https://slurm.schedmd.com/">SLURM</a>. For simulating synthetic
-        microstructures with large number of grains and for numerical calculation
-        of ultrasonic phase velocity and attenuation HCC is super effective.
-      </p>
-      <br>
-      <h1>High Throughput Computing</h1>
-      <p>
-        Recently, I was invited to attend the Open Science Grid(OSG) school in 2019. OSG is a platform dedicated to
-        allow
-        researchers to utilize idle super computing resources.
-        Using High Throughput Computing(HTC) OSG gives access to super computing power without any charge. Below is the
-        group photo of the school participants.
-      </p>
-      <div class="image">
-      <img src="./img/osg_school.jpg" alt="OSG_school" style="width:90%;" />
+        </p>
+        <br></br>
+        <h1>High Performance Computing</h1>
+        <p>
+          As part of the researcher's community at University of Nebraska-Lincoln I
+          have acess to <a href="https://hcc.unl.edu/" target="blank">Holland Computing Center (HCC)</a>. HCC is a
+          High Performace
+          Computing center which is based on <a href="https://slurm.schedmd.com/" target="blank">SLURM</a>. For
+          simulating synthetic
+          microstructures with large number of grains and for numerical calculation
+          of ultrasonic phase velocity and attenuation HCC is super effective.
+        </p>
+        <br>
+        <div class="HTC">
+          <div class="HTC_description">
+            <h1>High Throughput Computing</h1>
+            <p>
+              Recently, I was invited to attend the<a href="https://opensciencegrid.org/" target="blank"> Open Science
+                Grid(OSG)</a> school in 2019. OSG is a platform dedicated to
+              allow researchers to utilize idle super computing resources.
+              Using High Throughput Computing(HTC) OSG gives access to super computing power without any charge. Below
+              is the group photo of the school participants.
+            </p>
+          </div>
+          <div class="image_osg">
+            <img src="./img/osg_school.jpg" alt="OSG_school" style="width:90%;max-width:500px" />
+          </div>
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
     <div>
@@ -117,7 +168,7 @@
         <p>Showmic, Copyright &copy; 2019</p>
       </footer>
     </div>
-  </div>
+
 </body>
 
 </html>
