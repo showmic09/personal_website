@@ -203,6 +203,11 @@ a{
 }
 .animation{
     width: 100%;
+    padding-left: 2rem ;
+}
+.image_animation{
+    padding:2px;
+    width: 100%;
 }
 @media screen and (max-width:1500px){
     .nav-links{
@@ -272,6 +277,11 @@ a{
     .ultrasonic_background{
         display: grid;
         grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .image_animation{
+        height: 400 px;
+        width: 100%;
     }
     .HTC{
         display: grid;
@@ -298,12 +308,17 @@ a{
     }
     #icon_academia{
         position: relative;
-        top: 2em;
+        top: 3em;
+    }
+    .professional_link_icon{
+        position: relative;
+        padding: 10px;
     }
     .mobile_view{
         margin-top: 40px;
         overflow-x: hidden;
         position: relative;
+        padding-right: 2 rem;
     }
     
 }
