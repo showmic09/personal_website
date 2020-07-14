@@ -13,7 +13,7 @@ body{
     min-height: 100vh;
     position: relative;
     padding-bottom: 2.5rem;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 nav{
     display: flex;
@@ -97,8 +97,8 @@ a{
 }
 .wrapper_other{
     display: flex;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin: 20px;
     text-align: justify;
     font-family: "medium-content-sans-serif-font", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-size: 20px;
@@ -315,10 +315,8 @@ a{
         padding: 10px;
     }
     .mobile_view{
-        margin-top: 40px;
+        margin-top: 50px;
         overflow-x: hidden;
-        position: relative;
-        padding-right: 2 rem;
     }
     
 }
