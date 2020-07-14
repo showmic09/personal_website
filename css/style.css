@@ -315,8 +315,9 @@ a{
         padding: 10px;
     }
     .mobile_view{
-        margin-top: 50px;
         overflow-x: hidden;
+        width: 100%;
+        position: relative;
     }
     
 }
