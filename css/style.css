@@ -274,6 +274,13 @@ a{
         grid-row: 1;
         width: 100%;
     }
+    .wrapper_other{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        grid-row-gap: 100px;
+        text-align: justify;
+    }
     .ultrasonic_background{
         display: grid;
         grid-template-columns: 1fr;
