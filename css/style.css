@@ -97,8 +97,8 @@ a{
 }
 .wrapper_other{
     display: flex;
-    padding: 20px;
-    margin: 20px;
+    padding: 1em;
+    margin: 1em;
     text-align: justify;
     font-family: "medium-content-sans-serif-font", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-size: 20px;
@@ -172,9 +172,8 @@ a{
 }
 .research_topics{
     text-align: justify;
-    font-size: 20px;
-    padding: 20px;
-    margin: 20px;
+    padding: 1em;
+    margin: 1em;
 }
 .ultrasonic_background{
     display: grid;
@@ -198,8 +197,8 @@ a{
     opacity: 0.7;
 }
 .heading_photography{
-    padding: 20px;
-    margin: 20px;
+    padding: 1em;
+    width: 100%;
 }
 .animation{
     width: 100%;
@@ -266,7 +265,7 @@ a{
         display: grid;
         grid-template-columns: 1fr;
         padding: 1em;
-        grid-row-gap: 100px;
+        grid-row-gap: 1em;
         text-align: justify;
     }
     .wrapper>.contact_info {
@@ -278,8 +277,10 @@ a{
         display: grid;
         grid-template-columns: 1fr;
         padding: 1em;
-        grid-row-gap: 100px;
+        grid-row-gap: 1em;
         text-align: justify;
+        margin-top: -1em;
+        margin-left: 1em;
     }
     .ultrasonic_background{
         display: grid;
@@ -316,15 +317,17 @@ a{
     #icon_academia{
         position: relative;
         top: 3em;
+        /*<a href="https://un-lincoln.academia.edu/ShowmicIslam" target="_blank" id="icon_academia"><i
+                            class="ai ai-academia ai-lg"></i></a>*/
     }
     .professional_link_icon{
         position: relative;
         padding: 10px;
     }
     .mobile_view{
-        overflow-x: hidden;
         width: 100%;
         position: relative;
+        
     }
     
 }
@@ -435,8 +438,7 @@ a{
 
 .myImg {
     border-radius: 10%;
-    margin: 10px;
-    padding: 10px;
+    padding: 1em;
     cursor: pointer;
     transition: 0.3s;
   }

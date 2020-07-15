@@ -36,8 +36,8 @@ function readShow() {
       dots.style.display = "none";
       btnText.innerHTML = "Read less"; 
       moreText.style.display = "inline";
-    }
-  }
+    }  
+}
 
 
 // Get the modal
@@ -59,5 +59,5 @@ function myFunction(img){
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() { 
       modal.style.display = "none";
-    }
-    }
+    }   
+}
