@@ -8,6 +8,7 @@ body{
     overflow-x: hidden;
     margin: 0;
     padding-bottom: 0rem;
+    max-width: 100%;
 }
 .mobile_view{
     min-height: 100vh;
@@ -232,7 +233,7 @@ a{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 90vh;
+        height: 88vh;
         top: 8vh;
         background-color: brown;
         display: flex;
@@ -281,11 +282,15 @@ a{
         text-align: justify;
         margin-top: -1em;
         margin-left: 1em;
+        max-width: 100%;
     }
     .ultrasonic_background{
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
+    }
+    .publication_topics{
+        font-size: 14px;
     }
     .image_animation{
         height: 400 px;
@@ -325,7 +330,7 @@ a{
         padding: 10px;
     }
     .mobile_view{
-        width: 100%;
+        max-width: 100%;
         position: relative;
         overflow-x: hidden;
     }
