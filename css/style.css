@@ -232,8 +232,8 @@ a{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 10vh;
+        height: 90vh;
+        top: 8vh;
         background-color: brown;
         display: flex;
         flex-direction: column;
@@ -327,7 +327,7 @@ a{
     .mobile_view{
         width: 100%;
         position: relative;
-        
+        overflow-x: hidden;
     }
     
 }
