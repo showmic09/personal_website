@@ -294,6 +294,9 @@ a{
     .publication_topics{
         font-size: 14px;
     }
+    .heading_photography{
+        margin-top: 1em;
+    }
     .image_animation{
         height: 400 px;
         max-width: 100%;
