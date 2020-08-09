@@ -91,7 +91,7 @@ a{
     grid-row-gap: 1em;
     padding: 20px;
     margin: 20px;
-    text-align: justify;
+    text-align: left;
     /*font-family: Arial, Helvetica,sans-serif;*/
     font-family: "medium-content-sans-serif-font", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-size: 20px;
@@ -100,7 +100,7 @@ a{
     display: flex;
     padding: 1em;
     margin: 1em;
-    text-align: justify;
+    text-align: left;
     font-family: "medium-content-sans-serif-font", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-size: 20px;
 }
@@ -172,7 +172,7 @@ a{
     border-radius: 10%;
 }
 .research_topics{
-    text-align: justify;
+    text-align: left;
     padding: 1em;
     margin: 1em;
 }
@@ -197,10 +197,7 @@ a{
 #myBtn:hover{
     opacity: 0.7;
 }
-.heading_photography{
-    padding: 1em;
-    width: 100%;
-}
+
 .animation{
     width: 100%;
     padding-left: 2rem ;
@@ -208,6 +205,17 @@ a{
 .image_animation{
     padding:2px;
     width: 100%;
+}
+.heading_photography{
+    padding: 2px;
+}
+.wrapper_other_photography{
+    display: block;
+    padding: 1em;
+    margin: 1em;
+    text-align: left;
+    font-family: "medium-content-sans-serif-font", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-size: 20px;
 }
 @media screen and (max-width:1500px){
     .nav-links{
@@ -283,7 +291,7 @@ a{
         margin: 2px;
         grid-row-gap: 1em;
         text-align: justify;
-        margin-top: -1em;
+        margin-top: 0em;
         max-width: 100%;
     }
     .ultrasonic_background{
@@ -294,9 +302,7 @@ a{
     .publication_topics{
         font-size: 14px;
     }
-    .heading_photography{
-        margin-top: 1em;
-    }
+    
     .image_animation{
         height: 400 px;
         max-width: 100%;
@@ -338,6 +344,10 @@ a{
         max-width: 100%;
         position: relative;
         overflow-x: hidden;
+    }
+    .myImg{
+        width: 200px;
+        height: 200px;
     }
     
 }
@@ -448,7 +458,7 @@ a{
 
 .myImg {
     border-radius: 10%;
-    padding: 1em;
+    padding: 0.5em;
     cursor: pointer;
     transition: 0.3s;
   }
