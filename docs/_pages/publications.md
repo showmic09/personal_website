@@ -2,6 +2,8 @@
 layout: single
 title:  "Publications"
 permalink: /publications/
+toc : true
+toc_sticky: true
 ---
 # Journal Papers
 - **Islam, S.**, Norouzian, M., & Turner, J. A. (2022). Influence of tessellation morphology on ultrasonic scattering. The Journal of the Acoustical Society of America, 152(3), 1951-1961. [Link](https://doi.org/10.1121/10.0014288)
@@ -22,4 +24,3 @@ permalink: /publications/
 - *47th Annual Review of Progress in Quantitative NDE, August 25-26, 2020* Influence of Morphology on Ultrasonic Scattering: A Theoretical Study
 - *TMS Annual Meeting & Exhibition, March 15-18, 2021* Influence of Morphology on Ultrasonic Scattering: A Theoretical Study
 - *TMS Annual Meeting & Exhibition, March 15-18, 2021* Ultrasonic Scattering in Two-Phase Polycrystalline Materials
-
