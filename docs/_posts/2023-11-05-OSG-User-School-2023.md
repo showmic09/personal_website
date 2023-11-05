@@ -8,7 +8,7 @@ tags:
 This was my second year instructing and helping the participants of OSG User School. We had a great applicant pool this year. OSG organinizes this school every year with a goal of teaching the basics of High through Computing, `HTCondor` (The Scheduler program) and running computational jobs on `OSG`.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/OSG_US_2023.jpeg" alt="Participants of the OSG User School 2023">
+  <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/osg_US_2023.jpeg" alt="Participants of the OSG User School 2023">
   <figcaption>Participants of the OSG User School 2023</figcaption>
 </figure>
 
