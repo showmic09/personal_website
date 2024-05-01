@@ -107,7 +107,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/showmic09"
     - label: "Curriculam Vitae"
-      icon: "fab fa-regular fa-cloud-arrow-down"
+      icon: "fab fa-fw fa-cloud-arrow-down"
       url: "/docs/assets/files/CV_Islam.pdf"
 
 
