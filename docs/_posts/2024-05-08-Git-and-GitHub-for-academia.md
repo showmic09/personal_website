@@ -16,7 +16,7 @@ researchers know that even if you are not developing and maintaing a software an
 This pictures is a great example why git is required
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/docs/assets/images/Phd_comics.jpeg" alt="Why version control and git are useful?">
-  <figcaption>Participants of the OSG User School 2023</figcaption>
+  <figcaption>Necessity of using git</figcaption>
 </figure>
 Keeping track of codes, working and collaborating with colleagues on different projects are the perfect use cases for git.
 
@@ -30,15 +30,15 @@ Keeping track of codes, working and collaborating with colleagues on different p
 
 # Useful git commands
 - Commands that need to run once/machine
-  - git config --global user.name "<your username>"
-  - git config --global user.email "<your GitHub email>"
+  - git config --global user.name `<your username>`
+  - git config --global user.email `<your GitHub email>`
 - Usual Command cycle
-  - git clone <HTTPS/SSH address>
-  - git checkout –b <branch name>
-  - git add <file/folders name>
-  - git commit -m <useful message to identify the changes>
-  - git push origin main/master
-  - git checkout main/master
+  - git clone `<HTTPS/SSH address>`
+  - git checkout –b `<branch name>`
+  - git add `<file/folders name>`
+  - git commit -m `<useful message to identify the changes>`
+  - git push origin <span style="color:red">main/master</span>
+  - git checkout <span style="color:red">main/master</span>
   - git status
   - git pull
   
