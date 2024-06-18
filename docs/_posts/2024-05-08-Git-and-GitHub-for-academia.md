@@ -44,11 +44,11 @@ Keeping track of codes, working and collaborating with colleagues on different p
   - git status
   - git pull
   
-  # How git works?
+# How git works?
 
 I found a video online that helped me understanding how git works. I am including the link to the video here.
 
-  <iframe src="https://www.youtube.com/embed/v=e9lnsKot_SQ&ab_channel=ByteByteGo" width="560" height="315" frameborder="0"> </iframe>
+  <iframe src="https://www.youtube.com/watch?/v=e9lnsKot_SQ&ab_channel=ByteByteGo" width="560" height="315" frameborder="0"> </iframe>
   
 Alongside this video, software carpentry's lesson on version control with [git](https://swcarpentry.github.io/git-novice/) is also a great resource. 
 ## Example Scenario 
