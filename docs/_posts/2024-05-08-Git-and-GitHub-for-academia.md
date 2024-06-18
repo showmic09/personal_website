@@ -48,7 +48,7 @@ Keeping track of codes, working and collaborating with colleagues on different p
 
 I found a video online that helped me understanding how git works. I am including the link to the video here.
 
-  <iframe src="https://www.youtube.com/watch?/v=e9lnsKot_SQ&ab_channel=ByteByteGo" width="560" height="315" frameborder="0"> </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e9lnsKot_SQ?si=e9SRJ0OcpUMVxxH6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
 Alongside this video, software carpentry's lesson on version control with [git](https://swcarpentry.github.io/git-novice/) is also a great resource. 
 ## Example Scenario 
