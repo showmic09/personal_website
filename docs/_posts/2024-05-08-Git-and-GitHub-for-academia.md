@@ -11,7 +11,7 @@ tags:
 I started using git and GitHub mostly after I started working with [OSG](https://osg-htc.org/) and I realized that I should have started using it way before. My aim for this post is to let 
 researchers know that even if you are not developing and maintaing a software and you are a `one-man-army`, you need to be familiar with git and GitHub.
 # What is git and GitHub
-- `git` is a version control software and `GitHub` 
+- `git` is a version control software 
 - `GitHub` is a platform for hosting and collaborating on code and software projects.
 
 # Why do you need git?
